@@ -48,150 +48,152 @@ class Slider extends React.Component {
 export default class Home extends Component {
     render() {
         return(
-            <View style={styles.container}>
-                <Slider/>
-                // part.1
-                <View style={[styles.sub_view, styles.sub_red]}>
-                    // 1.1
-                    <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+            <ScrollView>
+                <View style={styles.container}>
+                    <Slider/>
+                    // part.1
+                    <View style={[styles.sub_view, styles.sub_red]}>
+                        // 1.1
+                        <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                            <View style={[styles.sub_flex, styles.sub_borderRight]}>
+                                <View style={[styles.sub_con_flex, styles.sub_text]}>
+                                    <Text style={[styles.font16]}>酒店</Text>
+                                </View>
+                                <View style={[styles.sub_con_flex]}>
+                                    <Image style={[styles.sub_icon_img]} source={{uri:BUIcon[0]}}></Image>
+                                </View>
+                            </View>
+                        </TouchableHighlight>
+                        // 1.2
                         <View style={[styles.sub_flex, styles.sub_borderRight]}>
+                            <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
+                                <Text style={styles.font16}>海外</Text>
+                            </View>
                             <View style={[styles.sub_con_flex, styles.sub_text]}>
-                                <Text style={[styles.font16]}>酒店</Text>
-                            </View>
-                            <View style={[styles.sub_con_flex]}>
-                                <Image style={[styles.sub_icon_img]} source={{uri:BUIcon[0]}}></Image>
+                                <Text style={styles.font16}>周边</Text>
                             </View>
                         </View>
-                    </TouchableHighlight>
-                    // 1.2
-                    <View style={[styles.sub_flex, styles.sub_borderRight]}>
-                        <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
-                            <Text style={styles.font16}>海外</Text>
-                        </View>
-                        <View style={[styles.sub_con_flex, styles.sub_text]}>
-                            <Text style={styles.font16}>周边</Text>
-                        </View>
-                    </View>
-                    // 1.3
-                    <View style={[styles.sub_flex]}>
-                        <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
-                            <Text style={styles.font16}>团购.特惠</Text>
-                        </View>
-                        <View style={[styles.sub_con_flex, styles.sub_text]}>
-                            <Text style={styles.font16}>客栈.公寓</Text>
+                        // 1.3
+                        <View style={[styles.sub_flex]}>
+                            <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
+                                <Text style={styles.font16}>团购.特惠</Text>
+                            </View>
+                            <View style={[styles.sub_con_flex, styles.sub_text]}>
+                                <Text style={styles.font16}>客栈.公寓</Text>
+                            </View>
                         </View>
                     </View>
-                </View>
 
-                // part.2
-                <View style={[styles.sub_view, styles.sub_blue]}>
-                    // 2.1
-                    <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                    // part.2
+                    <View style={[styles.sub_view, styles.sub_blue]}>
+                        // 2.1
+                        <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                            <View style={[styles.sub_flex, styles.sub_borderRight]}>
+                                <View style={[styles.sub_con_flex, styles.sub_text]}>
+                                    <Text style={[styles.font16]}>机票</Text>
+                                </View>
+                                <View style={[styles.sub_con_flex]}>
+                                    <Image style={[styles.sub_icon_img]} source={{uri:BUIcon[1]}}></Image>
+                                </View>
+                            </View>
+                        </TouchableHighlight>
+                        // 2.2
                         <View style={[styles.sub_flex, styles.sub_borderRight]}>
+                            <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
+                                <Text style={styles.font16}>火车票</Text>
+                            </View>
                             <View style={[styles.sub_con_flex, styles.sub_text]}>
-                                <Text style={[styles.font16]}>机票</Text>
-                            </View>
-                            <View style={[styles.sub_con_flex]}>
-                                <Image style={[styles.sub_icon_img]} source={{uri:BUIcon[1]}}></Image>
+                                <Text style={styles.font16}>接送机</Text>
                             </View>
                         </View>
-                    </TouchableHighlight>
-                    // 2.2
-                    <View style={[styles.sub_flex, styles.sub_borderRight]}>
-                        <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
-                            <Text style={styles.font16}>火车票</Text>
-                        </View>
-                        <View style={[styles.sub_con_flex, styles.sub_text]}>
-                            <Text style={styles.font16}>接送机</Text>
-                        </View>
-                    </View>
-                    // 2.3
-                    <View style={[styles.sub_flex]}>
-                        <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
-                            <Text style={styles.font16}>汽车票</Text>
-                        </View>
-                        <View style={[styles.sub_con_flex, styles.sub_text]}>
-                            <Text style={styles.font16}>自驾.专车</Text>
+                        // 2.3
+                        <View style={[styles.sub_flex]}>
+                            <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
+                                <Text style={styles.font16}>汽车票</Text>
+                            </View>
+                            <View style={[styles.sub_con_flex, styles.sub_text]}>
+                                <Text style={styles.font16}>自驾.专车</Text>
+                            </View>
                         </View>
                     </View>
-                </View>
 
-                // part.3
-                <View style={[styles.sub_view, styles.sub_green]}>
-                    // 3.1
-                    <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                    // part.3
+                    <View style={[styles.sub_view, styles.sub_green]}>
+                        // 3.1
+                        <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                            <View style={[styles.sub_flex, styles.sub_borderRight]}>
+                                <View style={[styles.sub_con_flex, styles.sub_text]}>
+                                    <Text style={[styles.font16]}>旅游</Text>
+                                </View>
+                                <View style={[styles.sub_con_flex]}>
+                                    <Image style={[styles.sub_icon_img]} source={{uri:BUIcon[2]}}></Image>
+                                </View>
+                            </View>
+                        </TouchableHighlight>
+                        // 3.2
                         <View style={[styles.sub_flex, styles.sub_borderRight]}>
+                            <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
+                                <Text style={styles.font16}>门票.玩乐</Text>
+                            </View>
                             <View style={[styles.sub_con_flex, styles.sub_text]}>
-                                <Text style={[styles.font16]}>旅游</Text>
-                            </View>
-                            <View style={[styles.sub_con_flex]}>
-                                <Image style={[styles.sub_icon_img]} source={{uri:BUIcon[2]}}></Image>
+                                <Text style={styles.font16}>出境WiFi</Text>
                             </View>
                         </View>
-                    </TouchableHighlight>
-                    // 3.2
-                    <View style={[styles.sub_flex, styles.sub_borderRight]}>
-                        <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
-                            <Text style={styles.font16}>门票.玩乐</Text>
-                        </View>
-                        <View style={[styles.sub_con_flex, styles.sub_text]}>
-                            <Text style={styles.font16}>出境WiFi</Text>
-                        </View>
-                    </View>
-                    // 3.3
-                    <View style={[styles.sub_flex]}>
-                        <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
-                            <Text style={styles.font16}>邮轮</Text>
-                        </View>
-                        <View style={[styles.sub_con_flex, styles.sub_text]}>
-                            <Text style={styles.font16}>签证</Text>
+                        // 3.3
+                        <View style={[styles.sub_flex]}>
+                            <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
+                                <Text style={styles.font16}>邮轮</Text>
+                            </View>
+                            <View style={[styles.sub_con_flex, styles.sub_text]}>
+                                <Text style={styles.font16}>签证</Text>
+                            </View>
                         </View>
                     </View>
-                </View>
 
-                // part.4
-                <View style={[styles.sub_view, styles.sub_yellow]}>
-                    // 4.1
-                    <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                    // part.4
+                    <View style={[styles.sub_view, styles.sub_yellow]}>
+                        // 4.1
+                        <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                            <View style={[styles.sub_flex, styles.sub_borderRight]}>
+                                <View style={[styles.sub_con_flex, styles.sub_text]}>
+                                    <Text style={[styles.font16]}>攻略</Text>
+                                </View>
+                                <View style={[styles.sub_con_flex]}>
+                                    <Image style={[styles.sub_icon_img]} source={{uri:BUIcon[3]}}></Image>
+                                </View>
+                            </View>
+                        </TouchableHighlight>
+                        // 4.2
                         <View style={[styles.sub_flex, styles.sub_borderRight]}>
+                            <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
+                                <Text style={styles.font16}>周末游</Text>
+                            </View>
                             <View style={[styles.sub_con_flex, styles.sub_text]}>
-                                <Text style={[styles.font16]}>攻略</Text>
-                            </View>
-                            <View style={[styles.sub_con_flex]}>
-                                <Image style={[styles.sub_icon_img]} source={{uri:BUIcon[3]}}></Image>
+                                <Text style={styles.font16}>礼品卡</Text>
                             </View>
                         </View>
-                    </TouchableHighlight>
-                    // 4.2
-                    <View style={[styles.sub_flex, styles.sub_borderRight]}>
-                        <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
-                            <Text style={styles.font16}>周末游</Text>
-                        </View>
-                        <View style={[styles.sub_con_flex, styles.sub_text]}>
-                            <Text style={styles.font16}>礼品卡</Text>
-                        </View>
-                    </View>
-                    // 4.3
-                    <View style={[styles.sub_flex]}>
-                        <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
-                            <Text style={styles.font16}>美食.购物</Text>
-                        </View>
-                        <View style={[styles.sub_con_flex, styles.sub_text]}>
-                            <Text style={styles.font16}>更多</Text>
+                        // 4.3
+                        <View style={[styles.sub_flex]}>
+                            <View style={[styles.sub_con_flex, styles.sub_borderBottom, styles.sub_text]}>
+                                <Text style={styles.font16}>美食.购物</Text>
+                            </View>
+                            <View style={[styles.sub_con_flex, styles.sub_text]}>
+                                <Text style={styles.font16}>更多</Text>
+                            </View>
                         </View>
                     </View>
-                </View>
-                // part.5
-                <View style={styles.img_view}>
-                    <View style={[styles.img_flex, {borderRightWidth: 0.5}]}>
-                        <Image style={[styles.img_wh]} source={{uri: Images[0]}}></Image>
+                    // part.5
+                    <View style={styles.img_view}>
+                        <View style={[styles.img_flex, {borderRightWidth: 0.5}]}>
+                            <Image style={[styles.img_wh]} source={{uri: Images[0]}}></Image>
+                        </View>
+                        <View style={[styles.img_flex, {borderLeftWidth: 0}]}>
+                            <Image style={[styles.img_wh]} source={{uri: Images[1]}}></Image>
+                        </View>
                     </View>
-                    <View style={[styles.img_flex, {borderLeftWidth: 0}]}>
-                        <Image style={[styles.img_wh]} source={{uri: Images[1]}}></Image>
-                    </View>
-                </View>
 
-            </View>
+                </View>
+            </ScrollView>
         );
     }
 }
@@ -200,7 +202,7 @@ const styles = StyleSheet.create({
     container:{
         backgroundColor:'#F2F2F2',
         flex:1,
-        marginTop: 64
+        // marginTop: 64
     },
     //slider
     wrapper: {
@@ -227,7 +229,7 @@ const styles = StyleSheet.create({
     sub_red:{
         backgroundColor: '#FA6778',
         borderColor:'#FA6778',
-        // marginTop:-70
+        marginTop:-70
     },
     sub_blue:{
         backgroundColor: '#3D98FF',
