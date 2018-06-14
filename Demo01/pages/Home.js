@@ -54,7 +54,7 @@ export default class Home extends Component {
                     // part.1
                     <View style={[styles.sub_view, styles.sub_red]}>
                         // 1.1
-                        <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                        <TouchableHighlight underlayColor={'#FA6778'} onPress={clickAction}  style={{flex: 1}}>
                             <View style={[styles.sub_flex, styles.sub_borderRight]}>
                                 <View style={[styles.sub_con_flex, styles.sub_text]}>
                                     <Text style={[styles.font16]}>酒店</Text>
@@ -87,7 +87,7 @@ export default class Home extends Component {
                     // part.2
                     <View style={[styles.sub_view, styles.sub_blue]}>
                         // 2.1
-                        <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                        <TouchableHighlight underlayColor={'#3D98FF'} style={{flex: 1}}>
                             <View style={[styles.sub_flex, styles.sub_borderRight]}>
                                 <View style={[styles.sub_con_flex, styles.sub_text]}>
                                     <Text style={[styles.font16]}>机票</Text>
@@ -120,7 +120,7 @@ export default class Home extends Component {
                     // part.3
                     <View style={[styles.sub_view, styles.sub_green]}>
                         // 3.1
-                        <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                        <TouchableHighlight underlayColor={'#5EBE00'} style={{flex: 1}}>
                             <View style={[styles.sub_flex, styles.sub_borderRight]}>
                                 <View style={[styles.sub_con_flex, styles.sub_text]}>
                                     <Text style={[styles.font16]}>旅游</Text>
@@ -153,7 +153,7 @@ export default class Home extends Component {
                     // part.4
                     <View style={[styles.sub_view, styles.sub_yellow]}>
                         // 4.1
-                        <TouchableHighlight underlayColor={'#FA6778'} style={{flex: 1}}>
+                        <TouchableHighlight underlayColor={'#FC9720'} style={{flex: 1}}>
                             <View style={[styles.sub_flex, styles.sub_borderRight]}>
                                 <View style={[styles.sub_con_flex, styles.sub_text]}>
                                     <Text style={[styles.font16]}>攻略</Text>
@@ -290,6 +290,8 @@ const styles = StyleSheet.create({
         borderRightWidth: 0,
         resizeMode: Image.resizeMode.contain
     }
-
-
 });
+
+const clickAction = () => {
+    console.log('点击按钮');
+}
