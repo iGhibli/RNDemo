@@ -21,6 +21,11 @@ var sliderImgs = [
     'http://images3.c-ctrip.com/rk/apph5/D1/201506/app_home_ad05_640_128.jpg'
 ];
 
+var Images = [
+    'http://webresource.c-ctrip.com/ResCRMOnline/R5/html5/images/zzz_pic_salead01.png',
+    'http://images3.c-ctrip.com/rk/apph5/B1/201505/app_home_ad06_310_120.jpg'
+];
+
 var BUIcon = [
     'https://raw.githubusercontent.com/vczero/vczero.github.io/master/ctrip/%E6%9C%AA%E6%A0%87%E9%A2%98-1.png',
     'https://raw.githubusercontent.com/vczero/vczero.github.io/master/ctrip/feiji.png',
@@ -176,6 +181,15 @@ export default class Home extends Component {
                         </View>
                     </View>
                 </View>
+                // part.5
+                <View style={styles.img_view}>
+                    <View style={[styles.img_flex, {borderRightWidth: 0.5}]}>
+                        <Image style={[styles.img_wh]} source={{uri: Images[0]}}></Image>
+                    </View>
+                    <View style={[styles.img_flex, {borderLeftWidth: 0}]}>
+                        <Image style={[styles.img_wh]} source={{uri: Images[1]}}></Image>
+                    </View>
+                </View>
 
             </View>
         );
@@ -255,6 +269,25 @@ const styles = StyleSheet.create({
         height:40,
         width:40,
         resizeMode:Image.resizeMode.contain
+    },
+    img_view: {
+        height: 62,
+        marginLeft: 5,
+        marginRight: 5,
+        marginBottom : 20,
+        backgroundColor: '#FFF',
+        flexDirection: 'row'
+    },
+    img_flex: {
+        flex:1,
+        borderWidth:1,
+        borderColor:'#CCC'
+    },
+    img_wh: {
+        height: 59,
+        borderRightWidth: 0,
+        resizeMode: Image.resizeMode.contain
     }
+
 
 });
